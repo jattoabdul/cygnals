@@ -1,0 +1,22 @@
+<template name="portfolioLayout">
+  <div class="layout-wrapper page" id="page">
+    <!--header=-->
+    <header id="header" class=" header white-header active-section">
+    {{> header}}
+    </header>
+    <!-- /header -->
+    <!-- breadcrumb -->
+    <div class="section page-title small-padding background-wrapper with-overlay black-overlay active-section">
+      {{> breadcrumb}}        
+    </div>
+    <!-- /breadcrumb -->
+    <!-- main -->
+    {{Template.dynamic template=workMain}}
+    <!-- /main -->
+    <!-- footer section -->
+    <footer>
+      {{> footer}}
+    </footer>
+    <!-- /footer section-->
+  </div>
+</template>

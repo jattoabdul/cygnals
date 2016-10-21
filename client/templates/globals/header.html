@@ -1,0 +1,39 @@
+<template name="header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="logo">
+                            {{#linkTo route='blog' class='navbar-brand'}}
+                                <img src="demo/black-logo.png" class="black-logo standard-logo middle-content" alt="">
+                                <img src="demo/white-logo.png" class="white-logo standard-logo middle-content" alt="">
+                                <img src="demo/black-logo.png" class="black-logo retina-logo middle-content" alt="">
+                                <img src="demo/white-logo.png" class="white-logo retina-logo middle-content" alt="">
+                            {{/linkTo}}
+                        </div>
+                    </div><!-- /.col-->
+                    <div class="col-md-8 menu-col text-right">
+                        <div class="menu">
+                            <ul class="list-inline">
+                                <li class="dropdown">{{#linkTo route='blog'}}Home{{/linkTo}}</li>
+                                <li class="dropdown">{{#linkTo route='about'}}Who we Are{{/linkTo}}</li>
+                                <li class="dropdown">{{#linkTo route='services'}}What we Do{{/linkTo}}</li>
+                                <li class="dropdown">{{#linkTo route='blog'}}Lab{{/linkTo}}</li>
+                                <li class="dropdown">{{#linkTo route='portfolio'}}Works{{/linkTo}}</li>
+                                <li class="dropdown">{{#linkTo route='contact'}}Contact Us{{/linkTo}}</li>
+                                <li class="dropdown">{{> loginButton }}</li>
+                            </ul>
+                        </div>
+                    </div><!-- /.col-->
+                    <div class="col-md-1 menu-col text-right">
+                        <div class="menu">
+                            <ul class="list-inline">
+                                <li class="dropdown">{{> loginButton }}</li>
+                            </ul>
+                        </div>
+                    </div><!-- /.col-->
+                    <div class="menu-toggle ">
+                        <i class="ti-menu"></i>
+                    </div>
+                </div>
+            </div><!-- /.container -->   
+</template>

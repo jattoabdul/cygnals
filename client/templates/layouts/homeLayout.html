@@ -1,0 +1,22 @@
+<template name="homeLayout">
+  <div class="layout-wrapper page" id="page">
+    <!--header=-->
+    <header id="header" class=" header white-header active-section">
+    {{> header}}
+    </header>
+    <!-- /header -->
+    <!-- parallax (flex-slider) -->
+    <div class="section page-title small-padding background-wrapper with-overlay black-overlay active-section">
+      {{> slider}}        
+    </div>
+    <!-- /parallax (flex-slider) -->
+    <!-- main -->
+    {{Template.dynamic template=main}}
+    <!-- /main -->
+    <!-- footer section -->
+    <footer>
+      {{> footer}}
+    </footer>
+    <!-- /footer section-->
+  </div>
+</template>
